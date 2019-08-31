@@ -35,13 +35,13 @@
 import { Component, OnInit } from '@angular/core';
 import {User}from '../user';
 import {HttpClient} from '@angular/common/http';
-import {HttpRequestService}from '.repos-request'
+import {HttpRequestService} from './repos-request';
 import { Repository } from '../repository';
 @Component({
   selector: 'app-user-profile',
-  templateUrl: './github.component.html',
+  templateUrl: './user-profile.component.html',
   providers:[HttpRequestService],
-  styleUrls: ['./github.component.css']
+  styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
   Users:User;
