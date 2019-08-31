@@ -35,7 +35,7 @@
 import { Component, OnInit } from '@angular/core';
 import {User}from '../user';
 import {HttpClient} from '@angular/common/http';
-import {HttpRequestService} from './repos-request';
+import {HttpRequestService}from '../repos-request/http-request.service'
 import { Repository } from '../repository';
 @Component({
   selector: 'app-user-profile',
