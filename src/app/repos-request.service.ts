@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import {Repository} from './repository';
+import {User} from './user';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../environments/environment';
-import { User } from './user';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -35,8 +36,7 @@ export class ReposRequestService {
             resolve()
         },
         error=>{
-                // this.quote.quote="Never, never, never give up."
-                // this.quote.author="winston churchill"
+                
                 reject(error)
                 console.log(user.name)
             }
