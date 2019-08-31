@@ -35,10 +35,10 @@
 import { Component, OnInit } from '@angular/core';
 import {User}from '../user';
 import {HttpClient} from '@angular/common/http';
-import {HttpRequestService}from './repos-request'
+import {HttpRequestService}from '.repos-request'
 import { Repository } from '../repository';
 @Component({
-  selector: 'app-github',
+  selector: 'app-user-profile',
   templateUrl: './github.component.html',
   providers:[HttpRequestService],
   styleUrls: ['./github.component.css']
