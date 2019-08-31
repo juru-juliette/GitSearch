@@ -25,7 +25,7 @@ export class ReposRequestService {
     let promise =new Promise((resolve,reject)=>{
         this.http.get<ApiResponse>('https://api.github.com/users/'+user.name+'?access_token=' +environment.api_key).toPromise().then(response=>{
             
-            this.repos.public_repos=response.public_repos
+            this.repos.repos=response.public_repos
             this.repos.following=response.following
             this.repos.followers=response.followers
             this.repos.created_at=response.created_at
