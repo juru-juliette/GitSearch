@@ -43,7 +43,7 @@ import { Repository } from '../repository';
   providers:[HttpRequestService],
   styleUrls: ['./github.component.css']
 })
-export class GithubComponent implements OnInit {
+export class UserProfileComponent implements OnInit {
   Users:User;
   repos:Repository;
   addNew(user){
