@@ -1,6 +1,18 @@
 <!-- <p>user-profile works!</p> -->
 <div class="container">
-    <div class="jumbtron">
-        
+    <div class="row">
+    <div class="col-md-6">
+        <app-user-form (add)="addNew($event)"></app-user-form>
+    </div>
+    <div class="col-md-6" id="two">
+        <img src={{repos.avatar_url}} height="200">
+        <p appHighlight>User Name:{{Users.name|change}}</p>
+        <p appHighlight>Repositories:{{repos.public_repos}}</p>
+        <p appHighlight>Created:{{repos.created_at}}</p>
+        <p appHighlight>Followers:{{repos.followers}}</p>
+        <p appHighlight>Following:{{repos.following}}</p>
+        <a href={{repos.html_url}}><em>Link</em></a>
     </div>
 </div>
+</div>
+<footer>Copyright (c) 2019 Kangabe juliette</footer>
