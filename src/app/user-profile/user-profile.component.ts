@@ -49,9 +49,9 @@ export class UserProfileComponent implements OnInit {
   addNew(user){
     this.reposRequest.reposRequest(user)
     this.repos=this.reposRequest.repos
-    // this.User.push(User)
+  
     this.Users= new User(user.name)
-    // console.log(user)
+  
 }
   constructor(private reposRequest:HttpRequestService) { 
     this.Users= new User("");
