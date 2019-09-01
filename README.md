@@ -1,6 +1,22 @@
 ## GitSearch
 The github app is an application designed to help the user search for repositories on github. The user is able to view public repositories and see followers and people following. the user can also view other people's repositories by searching their user name.
-
+## Technologies used
+. HTML
+. CSS
+. Type Script
+. Angular JS version 6
+. Bootstrap
+. Git Hub
+. Terminal CLI
+## how to access it 
+. Firstly you have to be connected on internet
+. Then open your browser
+. and type this website: https://juru-juliette.github.io/GitSearch/
+## Contact 
+. Tel: +250787873242 && +250789557608
+. Email: kangabejuliette@gmail.com
+## License
+This project is under MIT License. Copyright (c) 2019 Kangabe Juliette
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
