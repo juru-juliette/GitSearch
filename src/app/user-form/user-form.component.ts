@@ -1,5 +1,5 @@
 import { Component, OnInit ,Output,EventEmitter} from '@angular/core';
-import{User} from '../user'
+import{User} from '../user';
 @Component({
   selector: 'app-user-form',
   templateUrl: './user-form.component.html',

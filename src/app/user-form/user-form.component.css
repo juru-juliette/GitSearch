@@ -1,17 +1,20 @@
+/* .container{
+background-color: black;
+} */
 input{padding:13px;
     border-radius:10px; 
     width:100%;
     margin-bottom:10px;
-    background-color:white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
+    background-color:black;
+    
+   
     }
     
     button{border-radius:8px;
         padding:10px;
         width:30%;
-        background-color:red;
+        background-color:black;
         color:rgb(250, 245, 245);
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 700;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 500;
     }
