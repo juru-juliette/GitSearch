@@ -16,7 +16,7 @@ export class HttpRequestService {
     // console.log(user)
   
     interface ApiResponse{
-        public_repos:number;
+        repos:number;
         following:number;
         followers:number;
         created_at:Date;
@@ -26,7 +26,7 @@ export class HttpRequestService {
     let promise =new Promise((resolve,reject)=>{
       this.http.get<ApiResponse>('https://api.github.com/users/'+user.name+'?access_token=' +environment.api_key).toPromise().then(response=>{
           
-          this.repos.repos=response.public_repos
+          this.repos.repos=response.repos
           this.repos.following=response.following
           this.repos.followers=response.followers
           this.repos.created_at=response.created_at
@@ -35,6 +35,7 @@ export class HttpRequestService {
 
           resolve()
       },
+      
       error=>{
               
               reject(error)
