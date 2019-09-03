@@ -17,11 +17,11 @@ export class UserProfileComponent implements OnInit {
     this.reposRequest.reposRequest(user)
     this.repos=this.reposRequest.repos
   
-    this.Users= new User(user.name,user.repo,user.followers,user.following)
+    this.Users= new User(user.name)
   
 }
   constructor(private reposRequest:HttpRequestService) { 
-    this.Users= new User("",0,0,0);
+    this.Users= new User("");
     this.repos=new Repository(0,0,0,new Date(),"","");
   }
 

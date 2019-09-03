@@ -24,7 +24,7 @@ export class HttpRequestService {
         avatar_url:string;
     }
     let promise =new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>('https://api.github.com/users/'+user.name+'?access_token=' +environment.api_key).toPromise().then(response=>{
+      this.http.get<ApiResponse>('https://api.github.com/users/'+user.name+'?api_key=' +environment.api_key).toPromise().then(response=>{
           
           this.repos.repos=response.repos
           this.repos.following=response.following
